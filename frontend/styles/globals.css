@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+    border-radius: 50px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 50px;
+  }
+  .fade-left {
+    opacity: 0;
+    transform: translateX(-20px); /* Start from 20px to the left */
+    animation: fadeLeftAnimation 1s ease forwards;
+  }
+
+  @keyframes fadeLeftAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  /* Animations */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out;
+  }
+
+  @keyframes fade-left {
+    from {
+      opacity: 0;
+      transform: translateX(-1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-left {
+    animation: fade-left 0.5s ease-out;
+  }
+  @keyframes fade-down {
+    from {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-down {
+    animation: fade-down 0.5s ease-out;
+  }
+
+  @keyframes fade-right {
+    from {
+      opacity: 0;
+      transform: translateX(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-right {
+    animation: fade-right 0.5s ease-out;
+  }
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-zoom-in {
+    animation: zoom-in 0.5s ease-in-out;
+  }
+}
+@keyframes animate-fade-appears {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Optional: adds a subtle upward motion */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-appears {
+  animation: animate-fade-appears 0.5s ease forwards; /* Adjust duration and easing as needed */
+}
+/* Tooltip customization (optional) */
+.react-tooltip {
+  background-color: #1e40af !important;
+  color: #ffffff !important;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+}

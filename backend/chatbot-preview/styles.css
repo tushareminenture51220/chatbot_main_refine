@@ -1,0 +1,1154 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.chatbot-container * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  font-family: "Lato", sans-serif !important;
+  letter-spacing: 0px !important;
+  line-height: normal !important;
+  color: #000;
+}
+.chatbot-container .icon-main-embot svg {
+  width: 25px;
+  vertical-align: center;
+}
+.chatbot-container .timerCountDownDivResponseclass {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: -11px;
+  margin-right: 8px;
+  gap: 10px;
+  visibility: hidden;
+}
+
+.chatbot-container .icon-main-embot .roboIconSvgMain {
+  width: 45px;
+  height: auto;
+  margin-left: 0;
+  margin-bottom: -2px;
+}
+.chatbot-container .transcriptIcon {
+  cursor: pointer;
+}
+.chatbot-container .switchToBotBtnClass {
+  position: absolute;
+  right: 18px;
+  bottom: 77px;
+  cursor: pointer;
+}
+.chatbot-container .switchToBotBtnClass svg path {
+  fill: #777;
+}
+.chatbot-container .switchToBotBtnClass svg:hover path {
+  fill: #fe3f56;
+}
+.chatbot-container .spinner-for-alertEMBOT svg {
+  width: 25px;
+  height: auto;
+}
+.chatbot-container .attachementImgDownloadBtn svg path {
+  fill: #000;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #0077b6;
+  z-index: 9999;
+}
+.chatbot-container .ChatBotIconDiv {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatbot-container .ChatBotIconDiv .ChatBotIconText {
+  position: absolute;
+  font-size: 15px;
+  white-space: nowrap;
+  color: #3c4859;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  right: 32px;
+  background: url(https://storage.googleapis.com/livesupport/chat/images/bubble-middle-3.svg) -1px -25px
+    repeat-x;
+  height: 60px;
+  line-height: 63px !important;
+  bottom: 0px;
+  padding: 0 0 0 2px;
+  background-size: 180px;
+}
+.chatbot-container .assistantBGImageStyle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding: 4px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.chatbot-container
+  .chatInterfaceinnerDiv
+  .alertDiv
+  .alertInnerDiv
+  .alertTextHedding {
+  text-align: start;
+  color: #000;
+  font-weight: 400;
+  font-size: 12px;
+}
+.chatbot-container .ChatBotIconDiv .ChatBotIconText::after {
+  content: "";
+  position: absolute;
+  background: url(https://storage.googleapis.com/livesupport/chat/images/bubble-right.svg) -4px -25px
+    no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 60px;
+  right: -30px;
+}
+.chatbot-container .ChatBotIconDiv .ChatBotIconText::before {
+  content: "";
+  position: absolute;
+  background: url(https://storage.googleapis.com/livesupport/chat/images/bubble-left.svg)
+    2px -25px no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 60px;
+  left: -30px;
+}
+.chatbot-container .chatbot-icon {
+  background-color: #3c4859;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.chatbot-container .chatbot-icon i {
+  color: white;
+  font-size: larger;
+}
+.chatbot-container .chat-interface {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  background-color: #ffffff;
+  max-width: 350px;
+  min-width: 350px;
+  width: 100%;
+  height: 75vh;
+  display: none;
+  background-color: white;
+  border-radius: 5px;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 9999;
+}
+.chatbot-container .chatInterfaceinnerDiv {
+  position: relative;
+}
+.chatbot-container .chat-interface .chatInterfaceinnerDiv {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.chatbot-container #assisWaitingTimer {
+  font-weight: 400;
+  font-size: 12px;
+}
+.chatbot-container .chat-interface .header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+  padding: 0px 20px;
+}
+.chatbot-container .chat-interface .header .logo {
+  width: 80px;
+  height: 40px;
+}
+.chatbot-container .chat-interface .header .heading {
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+}
+/* chatting interface */
+.chatbot-container .chat-interface .chat .innerDivResponse {
+}
+.chatbot-container .chat-interface .chat .innerDivResponse .responseTextDiv {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  position: relative;
+}
+.chatbot-container .chat-interface .chat .innerDivResponse img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+.chatbot-container .attachementImgDownloadBtn {
+  display: none;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  background-color: floralwhite;
+  color: green;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.chatbot-container .attachementImgDownloadBtn svg {
+  width: 20px;
+  height: auto;
+}
+.chatbot-container
+  .chat-interface
+  .chat
+  .innerDivResponse:hover
+  .attachementImgDownloadBtn {
+  display: block !important;
+}
+.chatbot-container .chat-interface .chat-box {
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-height: 66vh;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the chat container */
+.chatbot-container .chat-interface .chat-box .chat {
+  padding: 10px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  min-height: 20vh;
+  height: 100%;
+}
+/* chat alert */
+
+.chatbot-container .chatInterfaceinnerDiv .alertDiv {
+  position: absolute !important;
+  width: fit-content;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 40px;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%, -50%);
+}
+.chatbot-container .chatInterfaceinnerDiv .alertDiv .alertInnerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+  width: 100%;
+  padding: 26px 10px;
+  border-color: rgba(56, 178, 172, 1) !important;
+  border-top: 5px solid;
+  background-color: rgba(230, 255, 250, 1) !important;
+  color: rgba(35, 78, 82, 1) !important;
+}
+.chatbot-container .chatInterfaceinnerDiv .alertDiv .alertInnerDiv i {
+}
+.chatbot-container
+  .chatInterfaceinnerDiv
+  .alertDiv
+  .alertInnerDiv
+  .alertTextHedding {
+  text-align: start;
+  font-size: 12px;
+}
+.chatbot-container
+  .chatInterfaceinnerDiv
+  .alertDiv
+  .alertInnerDiv
+  .alertTextHedding
+  span {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+/* Terminate chat button */
+.chatbot-container .ENdLiveChatBtn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 999;
+}
+.chatbot-container .ENdLiveChatBtn .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+}
+
+/* Hide the default checkbox */
+.chatbot-container .ENdLiveChatBtn .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style for the switch track */
+.chatbot-container .ENdLiveChatBtn .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+/* Style for the switch thumb (circle) */
+.chatbot-container .ENdLiveChatBtn .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Style for the switch when in the 'checked' state */
+.chatbot-container .ENdLiveChatBtn input:checked + .slider {
+  background-color: #2196f3;
+}
+
+/* Move the thumb to the right when in the 'checked' state */
+.chatbot-container .ENdLiveChatBtn input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Tooltip style */
+.chatbot-container .ENdLiveChatBtn .switch:hover::before {
+  content: "Terminate Live Chat Session.";
+  position: absolute;
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  top: 100%; /* Position below the switch */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  margin-top: 5px;
+  width: 218px;
+}
+
+.chatbot-container .ENdLiveChatBtn .switch:hover::before {
+  opacity: 1;
+}
+/* Style the trigger and response messages */
+
+.chatbot-container .chat-interface .chat-box .trigger i,
+.response i {
+  font-size: 1.2rem;
+}
+.chatbot-container .chat-interface .chat-box .trigger span {
+  background-color: rgb(219 234 254/1);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  max-width: 70%;
+  width: fit-content;
+}
+.chatbot-container .trigger .quickInquiryFromDataDiv {
+  display: grid;
+  align-items: start;
+  justify-content: start;
+}
+.chatbot-container .chat .response,
+.chatbot-container .chat .trigger {
+  clear: both;
+  margin: 15px 0px;
+}
+
+.chatbot-container .chat-interface .chat-box .trigger div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5px;
+}
+.chatbot-container .chat-interface .chat-box .response div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-items: flex-start;
+}
+.chatbot-container .chat-interface .chat-box .chat .response span {
+  background-color: rgb(245, 248, 250);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.chatbot-container .sbfbt2SpecialBot {
+  width: 34px;
+  height: 34px;
+  rotate: 0deg;
+  border-radius: 50%;
+  padding: 4px;
+  background: rgb(219 234 254 / 1);
+}
+.chatbot-container .sbtfUserSpecial svg {
+  width: 20px !important;
+  height: auto;
+  vertical-align: center;
+}
+.chatbot-container .sbfbt2SpecialBot svg {
+  vertical-align: center;
+  width: 100% !important;
+  height: auto;
+}
+.chatbot-container .chat .response .responseTextDiv {
+  width: fit-content;
+}
+.chatbot-container .chat .trigger span {
+}
+/* Style the chat form */
+.chatbot-container .chat-interface .chat-box .chat-form {
+  font-size: small;
+}
+.chatbot-container .chat-interface .chat-box .chat-form form {
+  background-color: #fff;
+  padding: 10px 10px 25px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.chatbot-container .chat-interface .subtriggerDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+.chatbot-container .chat-interface .wrapButtonsDivMain .subtriggerDiv {
+  width: 100%;
+  height: 100%;
+}
+.chatbot-container .chat-interface .wrapButtonsDivMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0px auto;
+  width: 85%;
+  margin-bottom: 12px;
+}
+.chatbot-container .chat-interface .subtriggerDiv .subtriggerBtn {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid rgb(0, 106, 225);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.2s;
+  width: 100%;
+}
+.chatbot-container .chat-interface .subtriggerDiv a {
+  text-align: center;
+}
+.chatbot-container .chat-interface .subtriggerDiv .subtriggerBtn:hover {
+  background-color: rgb(0, 106, 225);
+  color: #fff;
+}
+
+.chatbot-container .chat-interface .urlLabelsDIv .urlLabelbtn {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 8px 12px;
+  border: 1px solid rgb(0, 106, 225);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}
+.chatbot-container .chat-interface .urlLabelsDIv .urlLabelbtn svg {
+  width: 16px;
+  height: auto;
+}
+
+.chatbot-container .chat-interface .urlLabelsDIv .urlLabelbtn svg path {
+  stroke: blue;
+}
+.chatbot-container .EMPoweredByText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 21px;
+  bottom: 1px;
+}
+.chatbot-container .EMPoweredByText span:first-child {
+  color: rgb(136, 148, 171);
+  font-weight: 400;
+  font-size: 10px;
+  direction: ltr;
+  margin: 0px;
+  padding: 0;
+}
+.chatbot-container .EMPoweredByText span:last-child {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0;
+  color: #262c36;
+}
+/* Style the form icons */
+.chatbot-container .chat-form .sub-btns i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Style the chat input */
+.chatbot-container .chat-input {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.chatbot-container .chat-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+}
+
+/* Style the submit button */
+.chatbot-container .submit-btn {
+  background-color: rgb(0, 106, 225);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Make the submit button icon larger */
+.chatbot-container .submit-btn i {
+  font-size: 1.2rem;
+}
+
+/* scollbar styles */
+.chatbot-container #chatting-main {
+  scrollbar-width: thin;
+  scrollbar-color: #f1f1f1;
+}
+
+.chatbot-container #chatting-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatbot-container #chatting-main::-webkit-scrollbar-thumb {
+  background-color: rgb(225, 222, 222);
+  border-radius: 4px;
+}
+
+.chatbot-container #chatting-main::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Introduction form */
+.chatbot-container #IIFContainer {
+  display: none;
+}
+.chatbot-container #ANAFContainer {
+  display: none;
+}
+.chatbot-container #QIFContainer {
+  display: none;
+}
+
+.chatbot-container .commonEMBotPopUpForms {
+  position: absolute;
+  z-index: 999999999999999 !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.chatbot-container .commonEMBotPopUpForms {
+  height: 100%;
+}
+.chatbot-container #commonEMBotPopUpForms .intro-main {
+  background: linear-gradient(to top, rgba(0, 200, 83, 0), rgb(104 197 0));
+  height: 60%;
+  overflow: auto !important;
+  position: relative !important;
+}
+.chatbot-container .QIF-fielled-Group {
+  text-align: left;
+}
+.chatbot-container .commonEMBotPopUpForms .main-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+  height: auto;
+  padding: 15px 43px;
+}
+.chatbot-container .commonEMBotPopUpForms .main-logo img {
+  width: 100%;
+  height: auto;
+}
+.chatbot-container .commonEMBotPopUpForms .main-sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.chatbot-container .botChatPASSpan h4 {
+  font-size: 16px;
+}
+.chatbot-container .botChatPASSpan span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.chatbot-container #IIFContainer .titile-hi-there {
+  padding-left: 41px;
+  padding-right: 0;
+}
+.chatbot-container #IIFContainer .titile-hi-there div {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(255 255 255 / 1);
+  width: 100%;
+  font-weight: 600;
+}
+.chatbot-container #IIFContainer .form-container {
+  text-align: center;
+  margin: 40px 20px 20px 20px;
+  height: 40%;
+}
+.chatbot-container .submitfromBtnpiy svg {
+  width: 20px;
+  height: auto;
+}
+.chatbot-container .ply-icon-container {
+  text-align: center;
+  width: 100%;
+}
+.chatbot-container .submitfromBtnpiy2 svg {
+  width: 20px;
+  height: auto;
+  rotate: 0deg;
+}
+.chatbot-container .loading-dots-embot svg {
+  width: 25px;
+  height: auto;
+}
+.chatbot-container #IIFContainer .icon-container svg {
+  width: 25px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.chatbot-container #IIFContainer form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.chatbot-container #IIFContainer label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.chatbot-container #IIFContainer .input-container {
+  display: flex;
+}
+
+.chatbot-container #IIFContainer input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.chatbot-container #IIFContainer #submitfromBtn {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: 1px solid #4caf50;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.chatbot-container #IIFContainer #submitfromBtn:hover {
+  background-color: #45a049;
+}
+.chatbot-container .main-sub-container .chatBoxIdeal {
+  background-color: #fff;
+  margin: 28px 34px;
+  display: flex;
+  font-style: italic;
+  justify-content: space-around;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+.chatbot-container .main-sub-container .chatBoxIdeal h4 {
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.chatbot-container .main-sub-container .chatBoxIdeal p {
+  font-size: 15px;
+}
+
+.chatbot-container .main-sub-container #sendMessageBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.chatbot-container .main-sub-container #sendMessageBtn svg {
+  width: 28px;
+  height: auto;
+}
+
+/*slider*/
+/* Slideshow container */
+.chatbot-container .slideshow-container {
+  max-width: 280px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 45px;
+}
+
+/* Hide the images by default */
+.chatbot-container .slideshow-container .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.chatbot-container .slideshow-container .EM-prev,
+.chatbot-container .slideshow-container .EM-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 3px;
+  color: rgb(0, 106, 225);
+
+  font-size: 30px;
+  transition: 0.6s ease;
+  border: 2px solid rgb(0, 106, 225);
+  user-select: none;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.chatbot-container .slideshow-container .EM-prev:hover,
+.chatbot-container .slideshow-container .EM-next:hover {
+  background-color: rgb(0, 106, 225);
+  color: #fff;
+}
+
+.chatbot-container .slideshow-container .EM-prev:active,
+.chatbot-container .slideshow-container .EM-next:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust shadow properties */
+  transform: scale(0.95); /* Adjust scaling factor */
+}
+.chatbot-container .slideshow-container .EM-prev {
+  left: -24px;
+  border-radius: 5px;
+}
+/* Position the "next button" to the right */
+.chatbot-container .slideshow-container .EM-next {
+  right: -26px;
+  border-radius: 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* Caption text */
+.chatbot-container .slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/*assistnat waiting form*/
+.chatbot-container #ANAFContainer .chatBoxIdeal {
+  margin-top: 10px !important;
+  margin-left: 26px !important;
+  margin-right: 26px !important;
+}
+.chatbot-container #ANAFContainer .botChatPASSpan {
+  width: 100%;
+}
+.AWF-container {
+  background-color: #fff;
+  font-style: normal !important;
+}
+.AWF-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+.AWF-form {
+  display: flex;
+  flex-direction: column;
+}
+.AWF-label {
+  margin-bottom: 8px;
+  color: #555;
+  text-align: left;
+}
+.AWF-input,
+.AWF-textarea {
+  padding: 10px !important;
+  margin-bottom: 20px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  width: 100% !important; /* Adjust width */
+  box-sizing: border-box !important; /* Include padding and border in width calculation */
+  transition: border-color 0.3s !important;
+  color: #000 !important;
+  height: auto !important;
+}
+.AWF-main-heading {
+  text-align: center;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.AWF-input:focus,
+.AWF-textarea:focus {
+  border-color: rgb(0, 106, 225);
+  outline: none;
+}
+.AWF-textarea {
+  resize: vertical;
+  height: 100px; /* Adjust height */
+}
+.AWF-submit {
+  background-color: rgb(0, 106, 225);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%; /* Adjust width */
+}
+.AWF-submit:hover {
+  background-color: #0056b3;
+}
+.AWF-close-btn {
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*Quick query form*/
+.chatbot-container #QIFContainer .botChatPASSpan {
+  width: 100%;
+}
+.chatbot-container #QIFContainer .chatBoxIdeal {
+  margin: 21px;
+}
+
+.chatbot-container #QIFContainer .AWF-input,
+.chatbot-container #QIFContainer .AWF-textarea {
+  padding: 6px !important;
+  margin-bottom: 10px !important;
+}
+.chatbot-container #QIFContainer .AWF-main-heading {
+  padding: 0px 10px !important;
+}
+/* Number text (1/3 etc) */
+.chatbot-container .slideshow-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.chatbot-container .CommonFilledFromsShows {
+  width: 75%;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: start;
+  align-items: self-start !important;
+  background-color: rgb(224 231 255 / 1) !important;
+}
+.chatbot-container .CommonFilledFromsShows h3:first-child {
+  background: transparent;
+  text-align: center;
+  font-size: 18px !important;
+  font-weight: 500;
+  border-bottom: 1px dashed #000;
+  border-radius: 0;
+}
+.chatbot-container .CommonFilledFromsShows h3 {
+  color: #000 !important;
+  font-size: 16px !important;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+  padding: 7px 10px;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.chatbot-container .CommonFilledFromsShows p {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+  color: #1e2125 !important;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+  padding: 7px 10px;
+}
+/* Fading animation */
+
+.chatbot-container .slideshow-container .embot-fade {
+  animation-name: embot-fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes embot-fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.chatbot-container .slideshow-container .swiper-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0.75rem;
+  background-color: white;
+  color: #4a5568;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.chatbot-container .slideshow-container .sliderImageDiv {
+  position: relative;
+  margin: 10px;
+  margin-top: -15px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #4a5568;
+  color: white;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+}
+.chatbot-container .slideshow-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chatbot-container .slideshow-container .swiper-slide-content {
+  padding: 10px 20px;
+}
+
+.chatbot-container .slideshow-container .swiper-slide h3 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #1a202c;
+  margin: 1.0933333333rem 0 0.656rem 0;
+}
+
+.chatbot-container .slideshow-container .swiper-slide p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4a5568;
+}
+.chatbot-container .slideshow-container .swiper-slide-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 2px;
+}
+.chatbot-container .slideshow-container .swiper-slide-links a {
+  text-align: center;
+  color: blue !important;
+  text-decoration: underline !important;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.chatbot-container .slideshow-container .swiper-slide-links a:hover {
+  border-color: #a99260;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out;
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-left {
+  animation: fade-left 0.5s ease-out;
+}
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fade-down 0.5s ease-out;
+}
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-right {
+  animation: fade-right 0.5s ease-out;
+}
+
+.chatbot-container .ripple-effect {
+  animation-name: ripple !important;
+  animation-duration: 1.5s !important;
+  animation-iteration-count: infinite !important;
+  border-radius: 50% !important;
+}
+.chatbot-container .ripple-effect .icon {
+  transform: rotate(-60deg);
+  animation: rotate 0.2s ease forwards;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-60deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 green, 0 0 0 0 #fff4;
+  }
+
+  80% {
+    box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+  }
+}
+
+
