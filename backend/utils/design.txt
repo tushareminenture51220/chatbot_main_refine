@@ -7,13 +7,13 @@ export const sendOtpMail = async (to, otp) => {
     to,
     from: {
       email: "no-reply@eminenture.info",
-      name: "Eminenture Support",
+      name: "Eminenture Security Team",
     },
-    subject: "Password Reset Verification Code",
+    subject: "Your Password Reset Code - Eminenture Account Security",
     text: `
 Hello,
 
-You recently requested to reset your password for your Eminenture account. 
+You recently requested OTP to reset your password for your Eminenture account. 
 
 Your verification code is: ${otp}
 
@@ -58,7 +58,7 @@ This is an automated message, please do not reply to this email.
               </p>
               
               <p style="margin: 0 0 20px 0; color: #4b5563; font-size: 16px; line-height: 24px;">
-                You recently requested to reset your password for your Eminenture account. Use the verification code below to proceed:
+                You recently requested OTP to reset your password for your Eminenture account. Use the verification code below to proceed:
               </p>
               
               <!-- OTP Box -->

@@ -3,6 +3,9 @@ const upload = require("../utils/multer");
 const {
   createMasterAdminUser,
   loginMasterAdminUser,
+  forgotPasswordMasterAdmin,
+  masterOtpVerify,
+  masterChangePassword,
 } = require("../controllers/masterAdminUser.controller");
 const {
   linkedAccountwithMasterAdmin,
@@ -24,8 +27,10 @@ const masterAdminRouter = Router();
 
 // create user and authorization
 masterAdminRouter.post("/create-user", createMasterAdminUser);
-
 masterAdminRouter.post("/login-user", loginMasterAdminUser);
+masterAdminRouter.post("/forget-password", forgotPasswordMasterAdmin);
+masterAdminRouter.post("/master-otp-verify", masterOtpVerify);
+masterAdminRouter.post("/change-password", masterChangePassword);
 
 // linked accounts with master admin for otp sending
 masterAdminRouter.post("/linked-accounts", linkedAccountwithMasterAdmin);
